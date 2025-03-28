@@ -1,0 +1,27 @@
+.result {
+  &__title {
+    font-weight: 600;
+    color: green;
+    text-align: center;
+  }
+
+  &__from-text {
+    font-size: x-large;
+    color: darkgreen;
+  }
+
+  table {
+    border-collapse: collapse;
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  }
+}

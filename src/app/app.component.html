@@ -1,0 +1,32 @@
+<div class="import-json">
+  <header>
+    <h1>Import Read Json Files</h1>
+  </header>
+
+  <main>
+    <div class="import-json__content">
+      <p>
+        Hello Everyone!!! In this project, we will show you that
+        <strong>How to import/read local json file in angular.</strong>
+      </p>
+      <p>There are <strong>at least 3 ways to do this.</strong> To check one by one, click on below buttons.</p>
+    </div>
+
+    <div class="import-json__btn-container">
+      @for (route of routes(); track route.path) {
+      <button type="button" [routerLink]="[route.path]" [class.active]="isActiveRoute(route.path)">
+        {{ route.label }}
+      </button>
+      }
+    </div>
+
+    <div class="import-json__result">
+      <router-outlet />
+    </div>
+  </main>
+
+  <footer>
+    <h3>Created by <strong><a href="https://www.linkedin.com/in/darshan-trambadiya" target="_blank">Darshan
+          Trambadiya</a></strong></h3>
+  </footer>
+</div>
